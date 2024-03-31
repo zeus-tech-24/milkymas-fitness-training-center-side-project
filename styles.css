@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(./assets/woman-holding-weights-near-barbells.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 0 8%;
+    width: 100%;
+}
+
+nav::after {
+    background: wheat;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+ul li {
+    margin-right: auto;
+    list-style: none;
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+   color: red;
+   font-weight: bold;
+   transition: all 0.3s ease;
+}
+
+.btn {
+    background: red;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #fff;
+    color: red;
+    transition: all 1s ease;
+    scale: 1.1;
+}
+
+.section1-text {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    text-align: left;
+    left: 10%;
+    width: 50%;
+}
+
+.main-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.sub-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.paragraph {
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.socials {
+    position: absolute;
+    bottom: 5%;
+    left:9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.socials i {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.socials i:hover {
+    color: red;
+    transform: translateY(-10px);
+    transition: all 1s ease-in-out;
+}
+
+#about {
+    height: 100vh;
+    display: flex;
+    background: orangered;
+}
+
+.section-images-container-one {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    margin: 5rem 1rem;
+    padding: 10px;
+    gap: 2rem
+}
+
+.section-image {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.section-images-container-one .top {
+    margin-bottom: 3rem;
+}
+
+.section-images-container-one .down {
+    margin-top: 3rem;
+}
+
+.clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transition: clip-path 1s ease;
+    background-color: black;
+}
+
+.clip-one {
+    position: absolute;
+    background-image: url(./assets/clip-image1.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 56% 0, 40% 100%, 0% 100%);
+
+}
+
+.clip-two {
+    position: absolute;
+    background-image: url(./assets/clip-image2.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(52% 0, 100% 0, 100% 100%, 39% 100%);
+}
+
+.clip-three {
+    position: absolute;
+    background-image: url(./assets/clip-image3.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 56% 0, 40% 100%, 0% 100%);
+}
+
+.clip-four {
+    position: absolute;
+    background-image: url(./assets/clip-image4.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(52% 0, 100% 0, 100% 100%, 39% 100%);
+}
+
+.section-image:hover .clip {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+
+}
+
+.section-image .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.section-text-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    margin: 5rem 1rem;
+    padding: 10px;
+    background: white;
+    transition: all 1s ease;
+
+}
+
+.section-text-container:hover {
+    position: relative;
+    opacity: 0.9;
+    transition: all 1s ease;
+    display: block;
+
+}
+
+.section2-text h1 {
+    color: black;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    text-decoration: underline;
+}
+
+
+.section-2 {
+    margin-top: 1rem;
+    padding: 0 3rem;
+}
+
+
