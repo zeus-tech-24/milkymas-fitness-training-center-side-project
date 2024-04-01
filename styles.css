@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,25 +14,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
+.header {
+    height: 100vh;
     width: 100%;
+    position: relative;
+    display: flex;
     min-height: 100vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(./assets/woman-holding-weights-near-barbells.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-
-}
-
-.header {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
+    background-attachment: fixed;
 }
 
 nav {
@@ -100,8 +95,12 @@ ul li a:hover {
 }
 
 .main-text {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    color: #F9EF23;
+    letter-spacing: 5px;
+    font-weight: 500;
 }
 
 .sub-text {
@@ -144,7 +143,7 @@ ul li a:hover {
 #about {
     height: 100vh;
     display: flex;
-    background: orangered;
+    background: white;
 }
 
 .section-images-container-one {
@@ -162,6 +161,9 @@ ul li a:hover {
     position: relative;
     width: 50%;
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 1rem;
+   
 }
 
 .section-images-container-one .top {
@@ -188,6 +190,7 @@ ul li a:hover {
     background-image: url(./assets/clip-image1.jpg);
     background-position: center;
     background-size: cover;
+    border-radius: 1rem;
     clip-path: polygon(0 0, 56% 0, 40% 100%, 0% 100%);
 
 }
@@ -237,6 +240,7 @@ ul li a:hover {
     padding: 10px;
     background: white;
     transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 }
 
@@ -248,18 +252,101 @@ ul li a:hover {
 
 }
 
-.section2-text h1 {
-    color: black;
-    margin-bottom: 3rem;
+#plans {
+    height: 100vh;
+    display: flex;
+    background: #141414;
+}
+
+.section-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 3rem 3rem 3rem;
+}
+
+.text-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+}
+
+.text-container2 h1 {
+    color: #F9EF23;
+    font-size: 3rem;
     text-align: center;
-    padding-top: 1rem;
-    text-decoration: underline;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: 500;
+    
+
+}
+
+.text-container2 p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 
-.section-2 {
-    margin-top: 1rem;
-    padding: 0 3rem;
+.section-image-container {
+   width: 100%;
+   height: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   background-image: url(./assets/afroamerican-boxer-training-with-dumbbells.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   flex-direction: row;
+}
+
+.image-container {
+    position: relative;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    border-radius: 1rem;
+    border: 3px solid yellow;
+    box-shadow: rgba(249, 239, 35, 0.19) 0px 10px 20px, rgba(249, 239, 35, 0.23) 0px 6px 6px;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.image-container .text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 1rem 1rem;
+}
+
+#trainers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #141414;
 }
 
 
